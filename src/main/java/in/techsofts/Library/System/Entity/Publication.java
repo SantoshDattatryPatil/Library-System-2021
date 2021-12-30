@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Publication {
+public class Publication extends Auditable{
     @Id
     @GeneratedValue
     private long id;

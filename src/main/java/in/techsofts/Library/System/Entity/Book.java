@@ -14,13 +14,12 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Book {
+public class Book extends Auditable{
 @Id
     @GeneratedValue
     private long id;
     private String title;
     private String isbn;
-    private Date publicationDate;
     private int pages;
     private double price;
     @ManyToOne
